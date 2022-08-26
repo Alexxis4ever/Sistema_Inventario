@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap');
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Montserrat Alternates', sans-serif;
+	}
+	body{
+		background: url(../img/Sistema\ de\ inventario.jpg);
+		background-size: 100vw 100vh;
+		background-repeat: no-repeat;
+	}
+
+	/*Estilos para el encabezado*/
+	.header{
+		width: 100%;
+		height: 100px;
+		position: fixed;
+		top: 0;left: 0;
+		background: #00c2cb;
+	}
+	.container{
+		width: 90%;
+		max-width: 1200px;
+		margin: auto;
+	}
+	.container .btn-menu{
+		float: left;
+		line-height:100px;
+	}
+	.container .btn-menu label{
+		color: #fff;
+		font-size: 35px;
+		cursor: pointer;
+        position: relative;
+        right: 20rem; 
+	}
+
+
+	/*Fin de Estilos para el encabezado*/
+
+	/*Menù lateral*/
+	#btn-menu{
+		display: none;
+	}
+	.container-menu{
+		position: absolute;
+		background: rgba(0,0,0,0.5);
+		width: 100%;
+		height: 100vh;
+		top: 0;left: 0;
+		transition: all 500ms ease;
+		opacity: 0;
+		visibility: hidden;
+	}
+	#btn-menu:checked ~ .container-menu{
+		opacity: 1;
+		visibility: visible;
+	}
+	.cont-menu{
+		width: 100%;
+		max-width: 250px;
+		background: #1c1c1c;
+		height: 100vh;
+		position: relative;
+		transition: all 500ms ease;
+		transform: translateX(-100%);
+	}
+	#btn-menu:checked ~ .container-menu .cont-menu{
+		transform: translateX(0%);
+	}
+	.cont-menu nav{
+		transform: translateY(15%);
+	}
+	.cont-menu nav a{
+		display: block;
+		text-decoration: none;
+		padding: 20px;
+		color: #c7c7c7;
+		border-left: 5px solid transparent;
+		transition: all 400ms ease;
+	}
+	.cont-menu nav a:hover{
+		border-left: 5px solid #c7c7c7;
+		background: #1f1f1f;
+	}
+	.cont-menu label{
+		position: absolute;
+		right: 5px;
+		top: 10px;
+		color: #fff;
+		cursor: pointer;
+		font-size: 18px;
+	}
+	/*Fin de Menù lateral*/
+
+
+
+/* Contenedor padre */
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left:25%;
+    margin-right: auto;
+    width: 50rem;
+    margin-top: 45%;
+}
+
+/* Contenedor de articulos */
+
+.contain1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    width: 18rem;
+    height: 10rem;
+    position: relative;
+    bottom: 45rem;  
+    border-radius: 35px;
+    font-weight: bold;
+	font-size: 18px;
+}
+
+.inicio{
+	display: flex;
+	flex-direction: column;
+	margin-left: 1.8rem;
+}
+
+.inicio > h3{
+	text-align: center;
+	color: white;
+}
+
+.inicio > p{
+	color: white;
+	text-align: center;
+	height: 1.5rem;
+}
+
+.cantidad{
+	background-size: cover;
+	width: 6.5rem;
+	height: 7.2rem;
+	margin-right: 1.5rem;
+}
+
+
+/* contenedor de registros */
+
+.contain2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    width: 18rem;
+    height: 10rem;
+    position: relative;
+    bottom: 45rem;  
+    border-radius: 35px;
+    font-weight: bold;
+	font-size: 18px;
+}
+
+.inicio2{
+	display: flex;
+	flex-direction: column;
+	margin-left: 1rem;
+}
+
+.inicio2 > h3{
+	text-align: center;
+	color: white;
+}
+
+.inicio2 > p{
+	color: white;
+	text-align: center;
+	height: 1.5rem;
+}
+
+.registros{
+	background-size: cover;
+	width: 6rem;
+	height: 6.5rem;
+	margin-left: 0.5rem;
+}
+
+/* Titulo de la interfaz */
+
+h1{
+    display: block;
+    justify-content: center;
+    margin-left: 50%;
+    color: black;
+    text-align: center;
+    position: relative;
+    top: 1rem;
+    font-weight: bold;
+}
+
+/* Contenedor de mi tabla */
+
+.containTable{
+    display: block;
+    justify-content: center;
+    position: fixed;
+    top: 26rem;
+    left: 25rem;
+    width:75rem;
+    height: 50vh;
+    background-color: #00c2cb;
+    border-radius: 50px;
+}
+
+/* Titulos: movimientos del mes && filtrar por */
+
+.titulos{
+    display: flex;
+    justify-content: space-evenly;
+	color: white;
+	font-weight: bold;
+}
+
+/* Estilos de mi tabla */
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+	font-weight: bold;
+}
+
+th{
+    background-color: black;
+    color: white;
+}
+
+td , th{
+    border: 2px solid black;
+    text-align: center;
+    width: 13rem;
+    margin-bottom: 80rem;
+    font-size:18px;
+	
+}
+
+
+/* Agregamos el scroll al contenedor */
+
+.containerList{
+	display: flex;
+	flex-direction: column;
+	max-height: 19.5rem;
+	overflow-y: scroll;
+	margin-left: 3.4rem;
+	margin-right: 2.5rem;
+}
+
+/* Estilizamos nuestro scrollbar */
+
+.containerList::-webkit-scrollbar{
+	width: 12px;
+	background-color: #1c1c1c;
+	border-radius: 5px;
+}
+
+/* Estilizamos nuestro scrollbar-thumb */
+
+.containerList::-webkit-scrollbar-thumb{
+	background: #ffffff;
+	border-radius: 5px;
+} */

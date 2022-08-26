@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/salida.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+            <h1>Registrar salida</h1>
+            <main>
+                
+             <div class="contain1">
+					<input type="text" placeholder="Nombre producto" class="name"  id="name" maxlength="12">
+					<input type="date" placeholder="Fecha" class="date" id="date">
+					<input type="number" placeholder="cantidad" class="quantity" id="cantidad" maxlength="6">
+					
+				
+					<select name="" id="" class="type" id="embalaje">
+						<option value="papel"> Papel</option>
+						<option value="carton"> Carton</option>
+						<option value="metal"> Metal</option>
+						<option value="plastico"> Plastico</option>
+						<option value="vidrio"> Vidrio</option>
+					</select>
+
+				<div class="contain2">
+					<img src="../img/img-registrar.jpeg" alt="" class="file">
+					<button class="btn" id="envio">Registrar</button>
+				</div>
+			</div>
+
+
+            </main>
+		</div>
+		</div>
+        
+	</header>
+	
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="../mercancia/mercancia.html">Mercancia</a>
+			<a href="../movimientos/movimientos.html">Movimientos</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+<script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+<script src="../funcionalidades/app.js"></script>
+</body>
+</html>

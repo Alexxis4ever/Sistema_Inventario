@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	<link rel="stylesheet" href="../css/mSalida.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+            <h1>Movimientos - Salida</h1>
+
+            <main>
+                <div class="contain1">
+                <div class="inicio">
+                    <p>4</p><h3>Artículos</h3>
+                </div>
+                    <img src="../img/articulos.jpeg" alt="" class="cantidad"></div>
+
+
+                    <div class="contain2">
+                        <div class="inicio2">
+                            <p>17</p><h3>N° de registros</h3>
+                        </div>
+                            <img src="../img/cantidad.jpeg" alt="" class="registros"></div>
+            </main>
+
+            <div class="containTable">
+                
+            <div class="titulos">
+                <h2>Movimientos del mes</h2>
+                <h2>Filtrar por:</h2>
+            </div>
+
+                <table>
+                    <tr>
+                        <th>Encargado</th>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Fecha</th>
+                        <th>Embalaje</th>
+                    </tr>
+                    <tr>
+                        <td>Alvaro</td>
+                        <td>Panela</td>
+                        <td>10</td>
+                        <td>05/09/22</td>
+                        <td>Caja</td>
+                    </tr>
+                    <tr>
+                        <td>Mario</td>
+                        <td>Yogur</td>
+                        <td>7</td>
+                        <td>13/09/22</td>
+                        <td>Bolsa</td>
+                    </tr>
+                </table>
+            </div>
+		</div>
+	</div>
+</header>
+	
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="../mercancia/mercancia.html">Mercancia</a>
+			<a href="movimientos.html">Movimientos</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+</body>
+<script type="module" src="../funcionalidades/app.js"></script>
+<script type="module" src="../funcionalidades/firebase.js"></script>
+
+</html>
